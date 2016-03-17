@@ -9,10 +9,10 @@
 import UIKit
 
 func cal(numberA:Float ,NumberB numberB:Float,Cal Operator:(Float,Float)->Float)->Float{
-     let res =  Operator(numberA,numberB)
-     return res
+    let res =  Operator(numberA,numberB)
+    return res
 }
-    
+
 
 
 class ViewController: UIViewController {
@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var Operator:[(Float,Float)->Float] = []
     
     @IBOutlet weak var resultLabel: UILabel!
-
+    
     @IBAction func number0(sender: AnyObject) {
         if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "0"
@@ -137,13 +137,13 @@ class ViewController: UIViewController {
         number = []
         Operator = []
     }
-
+    
     @IBAction func change(sender: AnyObject) {
         if(self.resultLabel.text!.containsString("-")){
             self.resultLabel.text?.removeAtIndex((self.resultLabel.text?.startIndex)!)
         }else{
             self.resultLabel.text?.insert("-", atIndex: (self.resultLabel.text?.startIndex)!)
-
+            
         }
         
     }
@@ -198,19 +198,19 @@ class ViewController: UIViewController {
             Operator.insert((/), atIndex:0)
             self.resultLabel.text = "0"
         }
-        }
+    }
     
     @IBAction func equal(sender: AnyObject) {
         if(temp == 0){
             if(number.count>0){
-            let res = Float(cal(number.popLast()!, NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
-            self.resultLabel.text = "\(res)"
+                let res = Float(cal(number.popLast()!, NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+                self.resultLabel.text = "\(res)"
             }else{
                 self.resultLabel.text = "0"
             }
         }else{
-         let res = Float(cal(temp, NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
-        self.resultLabel.text = "\(res)"
+            let res = Float(cal(temp, NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            self.resultLabel.text = "\(res)"
         }
         temp = 0
         number = []
