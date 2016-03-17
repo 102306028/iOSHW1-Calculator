@@ -24,121 +24,109 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
 
     @IBAction func number0(sender: AnyObject) {
-         let number0 = "0"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "0"
         }else{
-            let res = String(self.resultLabel.text!) + number0
+            let res = String(self.resultLabel.text!) + "0"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number00(sender: AnyObject) {
-        let number00 = "00"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "0"
         }else{
-            let res = String(self.resultLabel.text!) + number00
+            let res = String(self.resultLabel.text!) + "00"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number1(sender: AnyObject) {
-        let number1 = "1"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "1"
         }else{
-            let res = String(self.resultLabel.text!) + number1
+            let res = String(self.resultLabel.text!) + "1"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number2(sender: AnyObject) {
-        let number2 = "2"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "2"
         }else{
-            let res = String(self.resultLabel.text!) + number2
+            let res = String(self.resultLabel.text!) + "2"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number3(sender: AnyObject) {
-        let number3 = "3"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "3"
         }else{
-            let res = String(self.resultLabel.text!) + number3
+            let res = String(self.resultLabel.text!) + "3"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number4(sender: AnyObject) {
-        let number4 = "4"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "4"
         }else{
-            let res = String(self.resultLabel.text!) + number4
+            let res = String(self.resultLabel.text!) + "4"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number5(sender: AnyObject) {
-        let number5 = "5"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "5"
         }else{
-            let res = String(self.resultLabel.text!) + number5
+            let res = String(self.resultLabel.text!) + "5"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number6(sender: AnyObject) {
-        let number6 = "6"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "6"
         }else{
-            let res = String(self.resultLabel.text!) + number6
+            let res = String(self.resultLabel.text!) + "6"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number7(sender: AnyObject) {
-        let number7 = "7"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "7"
         }else{
-            let res = String(self.resultLabel.text!) + number7
+            let res = String(self.resultLabel.text!) + "7"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number8(sender: AnyObject) {
-        let number8 = "8"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "8"
         }else{
-            let res = String(self.resultLabel.text!) + number8
+            let res = String(self.resultLabel.text!) + "8"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func number9(sender: AnyObject) {
-        let number9 = "9"
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false){
+        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
             self.resultLabel.text = "9"
         }else{
-            let res = String(self.resultLabel.text!) + number9
+            let res = String(self.resultLabel.text!) + "9"
             self.resultLabel.text = "\(res)"
         }
     }
     
     @IBAction func dot(sender: AnyObject) {
-        let dot = "."
         if(self.resultLabel.text!.containsString(".")){
             return
         }else{
-            let res = String(self.resultLabel.text!) + dot
+            let res = String(self.resultLabel.text!) + "."
             self.resultLabel.text="\(res)"
         }
     }
