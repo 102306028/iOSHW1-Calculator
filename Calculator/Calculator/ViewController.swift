@@ -8,8 +8,8 @@
 
 import UIKit
 
-func cal(numberA:Float ,NumberB numberB:Float,Cal Operator:(Float,Float)->Float)->Float{
-    let res =  Operator(numberA,numberB)
+func cal(numberA: Float , NumberB numberB: Float, Cal calOperator: (Float, Float)-> Float) -> Float{
+    let res =  calOperator(numberA,numberB)
     return res
 }
 
@@ -17,14 +17,14 @@ func cal(numberA:Float ,NumberB numberB:Float,Cal Operator:(Float,Float)->Float)
 
 class ViewController: UIViewController {
     
-    var temp:Float = 0
-    var number:[Float] = []
-    var Operator:[(Float,Float)->Float] = []
+    var tempStorage: Float = 0
+    var number: [Float] = []
+    var Operator: [(Float, Float) -> Float] = []
     
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func number0(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "0"
         }else{
             let res = String(self.resultLabel.text!) + "0"
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number00(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "0"
         }else{
             let res = String(self.resultLabel.text!) + "00"
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number1(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "1"
         }else{
             let res = String(self.resultLabel.text!) + "1"
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number2(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "2"
         }else{
             let res = String(self.resultLabel.text!) + "2"
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number3(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "3"
         }else{
             let res = String(self.resultLabel.text!) + "3"
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number4(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "4"
         }else{
             let res = String(self.resultLabel.text!) + "4"
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number5(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "5"
         }else{
             let res = String(self.resultLabel.text!) + "5"
@@ -87,7 +87,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number6(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "6"
         }else{
             let res = String(self.resultLabel.text!) + "6"
@@ -96,7 +96,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number7(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "7"
         }else{
             let res = String(self.resultLabel.text!) + "7"
@@ -105,7 +105,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number8(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "8"
         }else{
             let res = String(self.resultLabel.text!) + "8"
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func number9(sender: AnyObject) {
-        if(Float(self.resultLabel.text!)! == 0 && self.resultLabel.text!.containsString(".") == false && self.resultLabel.text!.containsString("-") == false){
+        if Float(self.resultLabel.text!)! == 0 && !self.resultLabel.text!.containsString(".")  && !self.resultLabel.text!.containsString("-") {
             self.resultLabel.text = "9"
         }else{
             let res = String(self.resultLabel.text!) + "9"
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dot(sender: AnyObject) {
-        if(self.resultLabel.text!.containsString(".")){
+        if self.resultLabel.text!.containsString(".") {
             return
         }else{
             let res = String(self.resultLabel.text!) + "."
@@ -133,13 +133,13 @@ class ViewController: UIViewController {
     
     @IBAction func buttonAC(sender: AnyObject) {
         self.resultLabel.text = "0"
-        temp = 0
+        tempStorage = 0
         number = []
         Operator = []
     }
     
     @IBAction func change(sender: AnyObject) {
-        if(self.resultLabel.text!.containsString("-")){
+        if self.resultLabel.text!.containsString("-") {
             self.resultLabel.text?.removeAtIndex((self.resultLabel.text?.startIndex)!)
         }else{
             self.resultLabel.text?.insert("-", atIndex: (self.resultLabel.text?.startIndex)!)
@@ -149,70 +149,99 @@ class ViewController: UIViewController {
     }
     
     @IBAction func percentage(sender: AnyObject) {
-        let res = Float(self.resultLabel.text!)!/100
+        let res =  Float(self.resultLabel.text!)!/100
         self.resultLabel.text = "\(res)"
     }
     
     @IBAction func increase(sender: AnyObject) {
-        if(number.count == 0){
-            number.insert(Float(self.resultLabel.text!)!, atIndex:0)
+        if number.count == 0 {
+            number.insert( Float(self.resultLabel.text!)!, atIndex:0)
             Operator.insert((+), atIndex:0)
             self.resultLabel.text = "0"
         }else{
-            temp += Float(cal(Float(number.popLast()!), NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            if tempStorage == 0 {
+                tempStorage +=  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }else{
+                tempStorage =  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }
+            number.insert(tempStorage, atIndex: 0)
             Operator.insert((+), atIndex:0)
             self.resultLabel.text = "0"
         }
     }
     
     @IBAction func decrease(sender: AnyObject) {
-        if(number.count == 0){
-            number.insert(Float(self.resultLabel.text!)!, atIndex:0)
+        if number.count == 0 {
+            number.insert( Float(self.resultLabel.text!)!, atIndex:0)
             Operator.insert((-), atIndex:0)
             self.resultLabel.text = "0"
         }else{
-            temp += Float(cal(Float(number.popLast()!), NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            if tempStorage == 0 {
+                tempStorage +=  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }else{
+                tempStorage =  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }
+            number.insert(tempStorage, atIndex: 0)
             Operator.insert((-), atIndex:0)
             self.resultLabel.text = "0"
-        }    }
+        }
+    }
     
     @IBAction func multipliy(sender: AnyObject) {
-        if(number.count == 0){
-            number.insert(Float(self.resultLabel.text!)!, atIndex:0)
+        if number.count == 0 {
+            number.insert( Float(self.resultLabel.text!)!, atIndex:0)
             Operator.insert((*), atIndex:0)
             self.resultLabel.text = "0"
         }else{
-            temp += Float(cal(Float(number.popLast()!), NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            if tempStorage == 0 {
+                tempStorage +=  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }else{
+                tempStorage =  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }
+            number.insert(tempStorage, atIndex: 0)
             Operator.insert((*), atIndex:0)
             self.resultLabel.text = "0"
         }
     }
     
     @IBAction func divide(sender: AnyObject) {
-        if(number.count == 0){
-            number.insert(Float(self.resultLabel.text!)!, atIndex:0)
+        if number.count == 0 {
+            number.insert( Float(self.resultLabel.text!)!, atIndex:0)
             Operator.insert((/), atIndex:0)
             self.resultLabel.text = "0"
         }else{
-            temp += Float(cal(Float(number.popLast()!), NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            if tempStorage == 0 {
+                tempStorage +=  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }else{
+                tempStorage =  Float(cal( Float(number.popLast()!), NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            }
+            number.insert(tempStorage, atIndex: 0)
             Operator.insert((/), atIndex:0)
             self.resultLabel.text = "0"
         }
     }
     
     @IBAction func equal(sender: AnyObject) {
-        if(temp == 0){
-            if(number.count>0){
-                let res = Float(cal(number.popLast()!, NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
-                self.resultLabel.text = "\(res)"
+        if tempStorage == 0 {
+            if number.count>0{
+                let res =  Float(cal(number.popLast()!, NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+                var resString = String(res)
+                if resString[resString.endIndex.advancedBy(-1)] == "0" && resString[resString.endIndex.advancedBy(-2)] == "." {
+                    resString = resString.stringByReplacingOccurrencesOfString(".0", withString: "")
+                    self.resultLabel.text = "\(resString)"
+                }
             }else{
                 self.resultLabel.text = "0"
             }
         }else{
-            let res = Float(cal(temp, NumberB: Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
-            self.resultLabel.text = "\(res)"
+            let res =  Float(cal(tempStorage, NumberB:  Float(self.resultLabel.text!)!, Cal: Operator.popLast()!))
+            var resString = String(res)
+            if resString[resString.endIndex.advancedBy(-1)] == "0" && resString[resString.endIndex.advancedBy(-2)] == "." {
+                resString = resString.stringByReplacingOccurrencesOfString(".0", withString: "")
+                self.resultLabel.text = "\(resString)"
+            }
         }
-        temp = 0
+        tempStorage = 0
         number = []
         Operator = []
     }
