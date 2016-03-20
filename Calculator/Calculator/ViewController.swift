@@ -229,6 +229,8 @@ class ViewController: UIViewController {
                 if resString[resString.endIndex.advancedBy(-1)] == "0" && resString[resString.endIndex.advancedBy(-2)] == "." {
                     resString = resString.stringByReplacingOccurrencesOfString(".0", withString: "")
                     self.resultLabel.text = "\(resString)"
+                }else{
+                    self.resultLabel.text = "\(res)"
                 }
             }else{
                 self.resultLabel.text = "0"
@@ -239,6 +241,8 @@ class ViewController: UIViewController {
             if resString[resString.endIndex.advancedBy(-1)] == "0" && resString[resString.endIndex.advancedBy(-2)] == "." {
                 resString = resString.stringByReplacingOccurrencesOfString(".0", withString: "")
                 self.resultLabel.text = "\(resString)"
+            }else{
+                self.resultLabel.text = "\(res)"
             }
         }
         tempStorage = 0
